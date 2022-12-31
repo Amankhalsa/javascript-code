@@ -13,4 +13,3 @@ console.log(price !== 500)
 
 
 
-
