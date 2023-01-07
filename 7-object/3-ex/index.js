@@ -13,7 +13,6 @@ let sum = 0;
 // for(let key in sarrary){
 //     console.log(key,sarrary[key]);
 //     sum +=  sarrary[key];
-
 // }
 // console.log(sum);
 
