@@ -1,5 +1,5 @@
 
-
+// finding array in object 
 const number = [
     {name :"kazi" ,age:20},
     {name :"jack" ,age:30},
