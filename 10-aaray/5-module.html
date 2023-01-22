@@ -10,14 +10,16 @@
     <h1>5-module</h1>
     <h1 id="demo"></h1>
     
-    <p id="demo"></p>
 
-    <script type="module">
- import  addnum from './main.js';
-    
- console.log(addnum(10,20));
-    
-    </script>
+
+<script type="module">
+
+import  addnumber from './main.js';
+
+console.log(addnumber(10,20));
+    let result = addnumber(10,20);
+document.getElementById('demo').innerHTML = "Result is :"+ result;
+</script>
     
 </body>
 </html>

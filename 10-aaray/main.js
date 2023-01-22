@@ -1,3 +1,3 @@
-let addnum = (num1, num2) => num1 + num2 ;
+const addnumber = (num1, num2) => num1 + num2 ;
 
-export default addnum;
+export default addnumber;
