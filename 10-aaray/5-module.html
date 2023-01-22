@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map </title>
+    <title>Module</title>
 </head>
 <body>
-    <h1>Map : </h1>
-    <h4 id="demo"></h4>
-    <h4 id="demo2"></h4>
-    <h4 id="demo3"></h4>
-    <h4 id="demo4"></h4>
+    <h1>5-module</h1>
+    <h1 id="demo"></h1>
     
+    <p id="demo"></p>
 
-
-    <script src="3-map.js"></script>
+    <script type="module">
+ import  addnum from './main.js';
+    
+ console.log(addnum(10,20));
+    
+    </script>
+    
 </body>
 </html>
