@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+    <h1>OOP factory function </h1>
+    <h3 id="demo"></h3>
+
+    <script type="text/javascript">
+
+        function user(name,age){
+            const userobj = {
+                name,
+                age,
+                walk: function(){
+                    console.log("we have started coding in php");
+                    },
+            };
+            return  userobj;
+        }
+
+const user1 = user('aman', 31);
+const user2 = user('getu', 35);
+
+console.log(user1, user2);
+document.getElementById('demo').innerHTML = JSON.stringify(user1);
+
+
+    </script>
+</body>
+</html>

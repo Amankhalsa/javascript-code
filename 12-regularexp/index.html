@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Regular expresion </h2>
+
+<h3 id="demo"></h3>
+<textarea id="area"></textarea>
+
+    <script type="text/javascript">
+
+        let name = /aman/;
+
+        console.log(name.test(' my name is aman'));
+
+
+        var area = document.getElementById("area");
+      
+      area.addEventListener("keypress", function() {
+         document.getElementById("demo").innerHTML = area.value;
+      });
+    </script>
+
+
+</body>
+</html>
