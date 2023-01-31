@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Home Address (with Factory Constructor functions)</h1>
+    <h2 id="demo"></h2>
+    <script type="text/javascript">
+const  address1 = address('a','b','c');
+const  address2 = address('x','y','z');
+
+const  address3 = new homeaddress('d','e','f');
+
+
+function address(street,city,zipcode){
+   return{
+        street,
+        city ,
+        zipcode ,
+    };
+}
+
+function homeaddress(street,city,zipcode){
+   
+        this.street = street ;
+        this.city = city;
+        this.zipcode = zipcode;
+ 
+}
+console.log(address1,address2 ,address3);
+document.getElementById('demo').innerHTML = JSON.stringify(address1,address2);
+    </script>
+</body>
+</html>

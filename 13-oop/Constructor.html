@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <h1>Constructor function :</h1>
+    <h3 id="demo"></h3>
+    <script type="text/javascript">
+
+        function user(name,age){
+        console.log(this);
+
+                this.name = name;
+                this.age = age;
+                this.walk = function(){
+                    console.log('hello i love javascript coding');
+                };
+        console.log(this);
+
+        }
+        let user1 = new user("aman", 31);
+        console.log(user1);
+    </script>
+</body>
+</html>
